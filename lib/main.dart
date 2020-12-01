@@ -13,7 +13,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-            fontFamily: "Product Sans", scaffoldBackgroundColor: Colors.black),
+          fontFamily: "Product Sans",
+          scaffoldBackgroundColor: Colors.black,
+          // primaryColor: Colors.black,
+          //accentColor: Colors.black,
+          colorScheme: ColorScheme.light(
+            primary: const Color(0xFF000000),
+            onPrimary: Color(0xffCDDC39),
+            surface: Colors.pink,
+          ),
+        ),
         home: MainPage());
   }
 }
